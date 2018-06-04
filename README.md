@@ -2,7 +2,9 @@
 
 A simple Secret Santa administration platform that let's you add/manage users and create/download games.
 
-![Secret Santa Admin Panel](https://github.com/LukasLen/secretsanta/screenshot.png | width=200)
+<p align="center">
+  <img width="80%" title="Secret Santa Admin Panel" alt="Secret Santa Admin Panel" src="https://github.com/LukasLen/secretsanta/blob/master/screenshot.png">
+</p>
 
 ## Installing
 
