@@ -6,27 +6,34 @@ A simple Secret Santa administration platform that let's you add/manage users an
   <img width="80%" title="Secret Santa Admin Panel" alt="Secret Santa Admin Panel" src="https://github.com/LukasLen/secretsanta/blob/master/screenshot.png">
 </p>
 
-## Installing
+## Installation
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+### Requirements
+
+* Web server with PHP 7+
+* MariaDB 10.1+
+
+This Application was tested on a system with PHP 7.2.5 and MariaDB 10.1.32 and is expected to run on the more recent versions.
+
 ### Instructions
 
-A step by step series of examples that tell you how to get your secret santa copy running.
+A step by step series of instructions that tell you how to get your secret santa copy running.
 
-* Import the file "sql/secetsanta.sql" to your database. The following commands are for mysql. Note: You can also import these files through your Database Management Client; for example phpMyAdmin.
+* Import the file "sql/secetsanta.sql" to your database. Note: You can also import these files through your Database Management Client; for example phpMyAdmin.
   ```
-  source sql/secetsanta.sql
+  source /path/to/sql/secetsanta.sql
   ```
 * To import test data use the "sql/insert test data.sql" file. It will create three users and a game.
   ```
-  source sql/insert test data.sql
+  source /path/to/sql/insert test data.sql
   ```
 * Modify the "config.php" file to your needs - Important: Set database values and email credentials
 
 Now you can open up the Secret Santa application in your browser and login with these details:  
-Email: ```admin@mail.com```  
-Password: ```admin```
+Email: `admin@mail.com`  
+Password: `admin`
 
 To login to the test users use:  
 Emails:
@@ -35,7 +42,7 @@ samuel.serif@mail.com
 will.barrow@mail.com
 justin.case@mail.com
 ```  
-Password: ```test```
+Password: `test`
 
 ### Deployment
 
