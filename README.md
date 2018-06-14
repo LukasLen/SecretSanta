@@ -63,7 +63,7 @@ To deploy on a live system make sure of the following:
 
 * **Lukas Lenhardt** - *Initial work* - [LukasLen](https://github.com/LukasLen)
 * **Benjamin Buzek** - *Initial work* - [benbuzek](https://github.com/benbuzek)
-* **Alexander Gaddy** - *Initial work* - [gaddal](https://github.com/alexgaddy)
+* **Alexander Gaddy** - *Initial work* - [alexgaddy](https://github.com/alexgaddy)
 
 See also the list of [contributors](https://github.com/LukasLen/secretsanta/contributors) who participated in this project.
 
