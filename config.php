@@ -3,6 +3,7 @@
   /*    Database Settings
    *    Please enter the connection details to the database
    */
+    $database = "" ; //Enter the database here. 
     $db_servername="localhost";
     $db_dbname="secretsanta";
     $db_username="root";
