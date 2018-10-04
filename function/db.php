@@ -9,10 +9,7 @@
 */
   function connectDB(){
     //database connection credentials
-    global $db_servername;
-    global $db_dbname;
-    global $db_username;
-    global $db_password;
+    global $db;
 
     //try to connect to the database - throw error if unsuccessful
     try {
