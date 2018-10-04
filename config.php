@@ -3,10 +3,23 @@
   /*    Database Settings
    *    Please enter the connection details to the database
    */
-    $db_servername="localhost";
-    $db_dbname="secretsanta";
-    $db_username="root";
-    $db_password="";
+    
+    // mysql || sqlite || pgsql
+    $database_type = "mysql";
+    // Mysql Database
+    $db['mysql']['host'] ="localhost";
+    $db['mysql']['database']="secretsanta";
+    $db['mysql']['username']="root";
+    $db['mysql']['password']="";
+    
+    // Sqlite Database
+    $db['sqlite']['path'] = "";
+    
+    // Pgsql Database
+    $db['pgsql']['host'] ="localhost";
+    $db['pgsql']['database']="secretsanta";
+    $db['pgsql']['username']="root";
+    $db['pgsql']['password']="";
 
 
   /*    SMTP Outgoing Mail Settings

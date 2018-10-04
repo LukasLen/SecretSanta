@@ -9,14 +9,19 @@
 */
   function connectDB(){
     //database connection credentials
-    global $db_servername;
-    global $db_dbname;
-    global $db_username;
-    global $db_password;
+    global $db;
 
     //try to connect to the database - throw error if unsuccessful
     try {
-      $conn = new PDO("mysql:host=$db_servername;dbname=$db_dbname", $db_username, $db_password);
+      if($database_type == "mysql"){
+        $conn = new PDO("mysql:host=$db['mysql']['host'];dbname=$db['mysql']['database']", $db['mysql']['username'], $db['mysql']['password']);  
+      }
+      else if($database_type == "sqlite"){
+        $con = new PDO('sqlite:'.$db['sqlite']['path']);
+      }
+      else if($database_type == "pgsql"){
+        $con = new PDO('pgsql:host='.$db['pgsql']['host'].';dbname='.$db['pgsql']['database'].';user='.$db['pgsql']['username'].';password='.$db['pgsql']['password']);
+      }
 
       $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
