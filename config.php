@@ -6,20 +6,15 @@
     
     // mysql || sqlite || pgsql
     $database_type = "mysql";
-    // Mysql Database
-    $db['mysql']['host'] ="localhost";
-    $db['mysql']['database']="secretsanta";
-    $db['mysql']['username']="root";
-    $db['mysql']['password']="";
+
+    // Mysql & Pgsql Database
+    $db[$database_type]['host'] ="localhost";
+    $db[$database_type]['database']="secretsanta";
+    $db[$database_type]['username']="root";
+    $db[$database_type]['password']="";
     
     // Sqlite Database
-    $db['sqlite']['path'] = "";
-    
-    // Pgsql Database
-    $db['pgsql']['host'] ="localhost";
-    $db['pgsql']['database']="secretsanta";
-    $db['pgsql']['username']="root";
-    $db['pgsql']['password']="";
+    $db[$database_type]['path'] = "";
 
 
   /*    SMTP Outgoing Mail Settings
