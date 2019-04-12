@@ -1,6 +1,6 @@
 # Secret Santa
 
-A simple Secret Santa administration platform that let's you add/manage users and create/download games.
+A simple Secret Santa administration platform that lets you add/manage users and create/download games.
 
 <p align="center">
   <img width="80%" title="Secret Santa Admin Panel" alt="Secret Santa Admin Panel" src="https://github.com/LukasLen/secretsanta/blob/master/screenshot.png">
@@ -31,11 +31,11 @@ A step by step series of instructions that tell you how to get your secret santa
   ```
 * Modify the "config.php" file to your needs - Important: Set database values and email credentials
 
-Now you can open up the Secret Santa application in your browser and login with these details:  
+Now you can open up the Secret Santa application in your browser and log in with these details:  
 Email: `admin@mail.com`  
 Password: `admin`
 
-To login to the test users use:  
+To log in to the test users use:  
 Emails:
 ```
 samuel.serif@mail.com
@@ -50,7 +50,7 @@ To deploy on a live system make sure of the following:
 
 * Webroot is in the folder "root" (Or restrict access to the files not in root, however, setting the webroot to root is suggested.)
 * Check your "config.php" settings
-* Change the admins name, email, and password
+* Change the admin's name, email, and password
 * Remove test data
 
 ## Built With
